@@ -3,21 +3,21 @@
 
 read -p "Entrer le nom : " nom
 read -p "Entrer le prenom : " prenom
-read -p "Entrer le path du fichier : " fichier
+# read -p "Entrer le path du fichier : " fichier
 
 looppath=0
-while [[ $looppath == 0 ]]
+while [ $looppath == 0 ]; do
+    read -p "Entrer le path du fichier(.TXT) : " fichier
 
-     if [[ -e "$fichier "]]; then
-        echo "Le Path est bon!"
+    if [ -e "$fichier" ] && [ "${fichier##*.}" = "txt" ]; then
+        echo "Le fichier est bon!"
         looppath=1
     
-    else 
+     
         echo "Path non trouver!!"
-        Break
     
     fi
-do
+done
 
 exist=0
 
@@ -37,8 +37,6 @@ done < nompass.txt
 
 if [[ $exist == 0 ]]; then
     echo "No $nom $prenom with this name in file"
-
-
 fi
 
 echo ""
