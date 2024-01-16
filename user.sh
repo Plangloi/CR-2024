@@ -32,7 +32,6 @@ while read line ; do
 
     fi
 
-# done < $fichier
 done < nompass.txt
 
 if [[ $exist == 0 ]]; then
