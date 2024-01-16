@@ -1,0 +1,52 @@
+420-B55-RO Administration système Groupe : 481
+
+Laboratoire : shell scripts
+
+Exercice 1
+Créer un script qui demande à l'utilisateur de saisir une note et qui affiche un message en
+fonction de cette note :
+• « très bien » si la note est entre 16 et 20 ;
+• « bien » lorsqu'elle est entre 14 et 16 ;
+• « assez bien » si la note est entre 12 et 14 ;
+• « moyen » si la note est entre 10 et 12 ;
+• « insuffisant » si la note est inférieur à 10.
+
+Exercice 2
+Reprenez l'exercice 1 et faites en sorte que le programme se répète tant que l'utilisateur n'a
+pas saisi une note négative ou 'q' (pour quitter).
+Le script doit calculer le nombre de notes de saisies et en faire la moyenne tout à la fin.
+
+Exercice 3
+Créer un script dans lequel deux nombres opérandes et un signe opérateur (+-*/) devront être
+donnés en paramètres, ou saisis. Le script doit réaliser l'opération souhaitée.
+
+Exercice 4
+Créer un script qui permet de calculer et d'afficher la factorielle d'un nombre donné en
+paramètre (ou saisi en cas d'absence de paramètres).
+
+Exercice 5
+Créer un script qui doit calculer le nombre de fichiers standard, de sous-répertoires, et
+d'exécutables d'un répertoire quelconque qui sera donné en paramètre (ou saisis en cas
+d'absence du paramètre).
+
+420-B55-RO Administration système Groupe : 481
+
+Exercice 6
+Créer un script qui renvoie la même sortie que la commande ls
+
+Exercice 7
+Créer un script qui prend en paramètre ou en saisie le nom d'un fichier contenant le nom des
+élèves et leurs trois notes. Le script devra : afficher les noms des élèves, puis calculer et
+afficher la moyenne de chaque élève.
+
+Exercice 8
+Créer un script qui prend en paramètre (ou en saisie en cas d'absence du paramètre) un fichier
+qui contient des lignes comme ceci : Login + Tabulation + Nom + Tabulation + Prénom.
+Exemple :
+
+Le script devra vérifier, à l'aide d'une fonction, l'existence des utilisateurs enregistrés dans le
+fichier. Admettons, par exemple, que seul Dupont François soit un utilisateur et que le fichier se
+nomme ~/Documents/FichierUser, le script devra s'exécuter comme ceci :
+
+Le script devra donc, au préalable, vérifier l'existence du fichier avant de comparer son contenu
+au fichier /etc/passwd. Le script devra également quitter la boucle si le fichier est vide.
