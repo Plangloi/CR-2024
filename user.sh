@@ -9,7 +9,8 @@ looppath=0
 while [[ $looppath == 0 ]]
 
      if [[ -e "$fichier "]]; then
-        by echo "Le Path est bon!"
+        echo "Le Path est bon!"
+        looppath=1
     
     else 
         echo "Path non trouver!!"
