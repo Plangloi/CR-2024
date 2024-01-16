@@ -13,7 +13,7 @@ while [ $looppath == 0 ]; do
         echo "Le fichier est bon!"
         looppath=1
     
-     
+     else
         echo "Path non trouver!!"
     
     fi
