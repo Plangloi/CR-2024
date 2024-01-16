@@ -3,8 +3,20 @@
 
 read -p "Entrer le nom : " nom
 read -p "Entrer le prenom : " prenom
+read -p "Entrer le path du fichier : " fichier
 
-# read -p "Entrer le path du fichier : " fichier
+looppath=0
+while [[ $looppath == 0 ]]
+
+     if [[ -e "$fichier "]]; then
+        by echo "Le Path est bon!"
+    
+    else 
+        echo "Path non trouver!!"
+        Break
+    
+    fi
+do
 
 exist=0
 
