@@ -95,7 +95,6 @@ function nmap1 {
         echo "2-Nmap port ouvert"
         echo -e "\033[1;33m3-Main menu\033[m "
 
-
         read -p " Choisir 1 or 2 : " netstatchoix
 
         if [[ $netstatchoix -eq 1 ]]; then
