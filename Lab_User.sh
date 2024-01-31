@@ -1,45 +1,151 @@
 #!/bin/bash
 
+
+out=0
+
+    function pause {
+        echo "enter to continue! "
+        read
+        affichagemenu
+    }
+
     function verifyuser {
             read -p " Nom user : " util
             if grep "$util:" /etc/passwd > /dev/null; then
                 echo "Lutilisateur existe!"
             else
                 echo "Lutilisateur error!"
-
             fi
+    pause
     }
 
     function afficheruid {
             read -p "Nom de lutilisateur : " util
             id $util
-            }
+            pause
+    }
 
     function quiter {
             echo " Bye Bye! "
+            out=1
     }
 
     function affichagemenu {
+        clear
+        echo " 1. User Tools "
+        echo " 2. Nmap "
+        echo " 3. SSH Tools "
+        echo " q. Quitter "
+
+        read -p "Selectionner un choix : " choix
+
+     }
+
+     function Usertools {
         echo " 1. Vérifier l'existence d'un utilisateur " 
         echo " 2. Connaître l'UID d'un utilisateur "
-        echo " 3. Quitter "
-    }
+        echo " 3. Main menu "
+
+                read -p " Choisir 1-2 " usert
+        if [[ $usert -eq 1 ]]; then
+            verifyuser 
+
+        elif [[ $usert -eq 2 ]]; then
+            afficheruid
+
+        elif [[ $usert -eq 3 ]]; then
+            affichagemenu
+
+
+        else
+            echo "maivais choix"
+        fi
+
+
+     }
+
+     function ssh1 {
+        echo " 1-SSH install"
+        echo " 2-SSH On"
+        echo " 3-SSH Off"
+        echo " 4-Main menu "
+
+
+        read -p " Choisir 1 -3 " ssh1choix
+        if [[ $ssh1choix -eq 1 ]]; then
+            sudo apt-get update && sudo apt install openssh
+
+        elif [[ $ssh1choix -eq 2 ]]; then
+            echo "choix 2"
+
+        elif [[ $ssh1choix -eq 3 ]]; then
+            echo "choix 3"
+
+
+        elif [[ $ssh1choix -eq 4 ]]; then
+            affichagemenu
+
+        else
+            echo "maivais choix"
+        fi
+
+     }
+
+function nmap1 {
+        echo "1-Nmap install"
+        echo "2-Nmap port ouvert"
+        echo "3-Main menu "
+
+
+        read -p " Choisir 1 -2 " netstatchoix
+
+        if [[ $netstatchoix -eq 1 ]]; then
+            sudo apt install nmap
+            pause
+        elif [[ $netstatchoix -eq 2 ]]; then
+            read -p " target ip : (192.168.1.1/24) " target
+            nmap $target
+            pause
+
+        elif [[ $netstatchoix -eq 3 ]]; then
+            affichagemenu
+
+        else
+            echo "Maivais choix"
+            pause
+        fi
+
+
+}
 
 
 function main {
-        read -p "Selectionner un choix " choix
+
+    while [[ out -eq 0 ]]; do
 
         if [[ $choix -eq 1 ]]; then
-                verifyuser
-
+                Usertools
 
         elif [[ $choix -eq 2 ]]; then
-                afficheruid
+                nmap1
 
-        elif [[ $choix -eq 3 ]]; then
+        elif [[ $choix -eq q ]]; then
                 quiter
 
+        elif [[ $choix -eq 3 ]]; then
+                ssh1
+
+        elif [[ $choix -eq 4 ]]; then
+                nmap1
+
+        else
+            echo " Mauvais Choix "
+
+        pause
+
+
         fi
+    done
 }
 
 affichagemenu
