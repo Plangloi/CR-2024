@@ -12,7 +12,7 @@ out=0
     function verifyuser {
             read -p " Nom user : " util
             if grep "$util:" /etc/passwd > /dev/null; then
-                echo "Lutilisateur existe!"
+                echo "L'utilisateur $util existe!"
             else
                 echo "Lutilisateur error!"
             fi
@@ -21,7 +21,9 @@ out=0
 
     function afficheruid {
             read -p "Nom de lutilisateur : " util
-            id $util
+            clear
+            uid=$(id $util | awk '{print $1}')
+            echo "L'uid de $util est : $uid"
             pause
     }
 
@@ -32,21 +34,24 @@ out=0
 
     function affichagemenu {
         clear
-        echo " 1. User Tools "
-        echo " 2. Nmap "
-        echo " 3. SSH Tools "
-        echo " q. Quitter "
+        toilet Power tools
 
+        echo -e "\033[1;32m1-User Tools\033[m "
+        echo -e "\033[1;32m2-Nmap\033[m "
+        echo -e "\033[1;32m3-SSH Tools\033[m "
+        echo ""
+        echo -e "\033[1;31m(Q)uitter\033[m "
+        echo ""
         read -p "Selectionner un choix : " choix
 
      }
 
      function Usertools {
-        echo " 1. Vérifier l'existence d'un utilisateur " 
-        echo " 2. Connaître l'UID d'un utilisateur "
-        echo " 3. Main menu "
+        echo " 1-Vérifier l'existence d'un utilisateur " 
+        echo " 2-Connaître l'UID d'un utilisateur "
+        echo -e " \033[1;33m3-Main menu\033[m "
 
-                read -p " Choisir 1-2 " usert
+                read -p " Choisir 1-3 : " usert
         if [[ $usert -eq 1 ]]; then
             verifyuser 
 
@@ -55,20 +60,16 @@ out=0
 
         elif [[ $usert -eq 3 ]]; then
             affichagemenu
-
-
         else
             echo "maivais choix"
         fi
-
-
      }
 
      function ssh1 {
         echo " 1-SSH install"
         echo " 2-SSH On"
         echo " 3-SSH Off"
-        echo " 4-Main menu "
+        echo -e "\033[1;33m4-Main menu\033[m "
 
 
         read -p " Choisir 1 -3 " ssh1choix
@@ -81,23 +82,21 @@ out=0
         elif [[ $ssh1choix -eq 3 ]]; then
             echo "choix 3"
 
-
         elif [[ $ssh1choix -eq 4 ]]; then
             affichagemenu
 
         else
             echo "maivais choix"
         fi
-
      }
 
 function nmap1 {
         echo "1-Nmap install"
         echo "2-Nmap port ouvert"
-        echo "3-Main menu "
+        echo -e "\033[1;33m3-Main menu\033[m "
 
 
-        read -p " Choisir 1 -2 " netstatchoix
+        read -p " Choisir 1 or 2 : " netstatchoix
 
         if [[ $netstatchoix -eq 1 ]]; then
             sudo apt install nmap
@@ -114,10 +113,7 @@ function nmap1 {
             echo "Maivais choix"
             pause
         fi
-
-
 }
-
 
 function main {
 
