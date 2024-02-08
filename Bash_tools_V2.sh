@@ -17,6 +17,7 @@ out=0
             read -p " Nom user : " util
             if grep "$util:" /etc/passwd > /dev/null; then
                 echo "L'utilisateur $util existe!"
+                pause
             else
                 echo "Lutilisateur error!"
             fi
