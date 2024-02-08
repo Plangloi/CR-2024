@@ -39,6 +39,7 @@ out=0
         echo -e "\033[1;32m1-User Tools\033[m "
         echo -e "\033[1;32m2-Nmap\033[m "
         echo -e "\033[1;32m3-SSH Tools\033[m "
+        echo -e "\033[1;32m3-Network\033[m "
         echo ""
         echo -e "\033[1;31m(Q)uitter\033[m "
         echo ""
@@ -46,9 +47,31 @@ out=0
 
      }
 
+     function nettools {
+        echo " 1-Afficher la configuration de l’interface réseau " 
+        echo " 2-Afficher les connexions réseau "
+        echo -e " \033[1;33m3-Main menu\033[m "
+
+                read -p " Choisir 1-3 : " nettools_input
+        if [[ $nettools_input -eq 1 ]]; then
+             
+
+        elif [[ $usert -eq 2 ]]; then
+            
+
+        elif [[ $usert -eq 3 ]]; then
+            affichagemenu
+        else
+            echo "maivais choix"
+        fi
+     }
+
      function Usertools {
         echo " 1-Vérifier l'existence d'un utilisateur " 
         echo " 2-Connaître l'UID d'un utilisateur "
+        echo " 3-Afficher les utilisateurs " 
+        echo " 4-Ajouter un utilisateur " 
+        echo " 5-Changer le mot de passe d’un utilisateur" 
         echo -e " \033[1;33m3-Main menu\033[m "
 
                 read -p " Choisir 1-3 : " usert
@@ -74,7 +97,7 @@ out=0
 
         read -p " Choisir 1 -3 " ssh1choix
         if [[ $ssh1choix -eq 1 ]]; then
-            sudo apt-get update && sudo apt install openssh
+            sudo apt-get update && sudo apt install 
 
         elif [[ $ssh1choix -eq 2 ]]; then
             echo "choix 2"
