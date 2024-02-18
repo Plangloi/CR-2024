@@ -259,6 +259,7 @@ function ssh1 {
 function nmap1 {
 	echo "          1-Nmap install"
 	echo "          2-Nmap port ouvert"
+	echo "          3-Nmap Target more info"
 	echo -e "\033[1;33m(M)Main menu\033[m "
 	echo -e "\033[1;31m(Q)uitter\033[m "
 
@@ -272,6 +273,10 @@ function nmap1 {
 		nmap -sT $target
 		pause
 
+	elif [[ $netstatchoix_menu -eq 3 ]]; then
+		read -p " target ip : (192.168.X.X) " target
+		nmap --script default $target
+		pause
 	elif [[ $netstatchoix_menu == m ]]; then
 		affichagemenu
 
