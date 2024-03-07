@@ -296,35 +296,52 @@ function main {
 
 	while [[ out -eq 0 ]]; do
 
-		if [[ $choix_menu -eq 1 ]]; then
-			usertools
+		case $choix_menu in
+			1)
+				usertools
+			;;
+			2)
+				nmap1
+			;;
+			3)
+				
+			;;
+			*)
+				echo "default (none of above)"
+			;;
+		esac
+		
+		
 
-		elif [[ $choix_menu -eq 2 ]]; then
-			nmap1
+		# if [[ $choix_menu -eq 1 ]]; then
+		# 	usertools
 
-		elif [[ $choix_menu -eq 3 ]]; then
-			ssh1
+		# elif [[ $choix_menu -eq 2 ]]; then
+		# 	nmap1
 
-		elif [[ $choix_menu -eq 4 ]]; then
-			nettools
+		# elif [[ $choix_menu -eq 3 ]]; then
+		# 	ssh1
 
-		elif [[ $choix_menu -eq 5 ]]; then
-			process
+		# elif [[ $choix_menu -eq 4 ]]; then
+		# 	nettools
 
-		elif [[ $choix_menu -eq 6 ]]; then
-			montools
+		# elif [[ $choix_menu -eq 5 ]]; then
+		# 	process
 
-		elif [[ $choix_menu -eq 7 ]]; then
-			affichagemenu
+		# elif [[ $choix_menu -eq 6 ]]; then
+		# 	montools
 
-		elif [[ $choix_menu -eq q ]]; then
-			quiter
+		# elif [[ $choix_menu -eq 7 ]]; then
+		# 	affichagemenu
 
-		else
-			echo " Mauvais choix_menu "
-			sleep 2
-			affichagemenu
-		fi
+		# elif [[ $choix_menu -eq q ]]; then
+		# 	quiter
+
+		# else
+		# 	echo " Mauvais choix_menu "
+		# 	sleep 2
+		# 	affichagemenu
+		# fi
 	done
 }
 
