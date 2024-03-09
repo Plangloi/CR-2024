@@ -38,7 +38,7 @@ RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli" > Dockerfile
 #####Ajouter les commandes au fichier Docker-Compose
 ####echo "👇👇👇" > docker-compose.yml
 > [!CAUTION]
-> Port :==8010,9906,8088==
+> Port :8010,9906,8088
 > Verifier que les port son disponible!
 
 ```
@@ -81,7 +81,7 @@ services:
           - db
 ```
 #
-#####Ajouter les commandes au fichier index.php
+####Ajouter les commandes au fichier index.php
 ####echo "👇👇👇" > index.php
 
 ```
