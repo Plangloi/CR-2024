@@ -242,15 +242,15 @@ cat index.php
 ```
 ### sudo docker-compose uo -d
 ```
-
+```
+sudo docker-compose stop
+```
+#
+#
 > [!WARNING]  
 > Va detruire tout les Docker!!
 ```
 sudo docker-compose down
-```
-ou
-```
-sudo docker-compose stop
 ```
 
 
