@@ -25,9 +25,8 @@ touch docker-compose.yaml index.php Dockerfile
 ```
 chmod 777 docker-compose.yaml index.php Dockerfile
 ```
-### Ajouter les commandes au fichier Docker
+### Ajouter les commandes au fichier Dockerfile
 
-### echo "👇👇👇" > Docker
 #
 ```
 echo "
@@ -38,8 +37,6 @@ RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli" > Dockerfile
 #
 
 ### Ajouter les commandes au fichier Docker-Compose
-
-### echo "👇👇👇" > docker-compose.yml
 
 ```
 echo "
@@ -92,7 +89,6 @@ services:
 #
 #### Ajouter les commandes au fichier index.php
 
-### echo "👇👇👇" > index.php
 #
 ```
 echo "
@@ -256,6 +252,7 @@ sudo docker-compose uo -d
 
 ```
 ## Stopper ou Detruire les Docker!
+#
 ```
 sudo docker-compose stop
 
