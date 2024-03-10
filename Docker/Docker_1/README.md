@@ -24,10 +24,9 @@ touch docker-compose.yaml index.php Dockerfile
 ```
 chmod 777 docker-compose.yaml index.php Dockerfile
 ```
-#
-#Ajouter les commandes au fichier Docker
+### Ajouter les commandes au fichier Docker
 
-#echo "👇👇👇" > Docker
+# echo "👇👇👇" > Docker
 ```
 FROM php:8.0-apache 
 RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli" > Dockerfile
@@ -36,9 +35,9 @@ RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli" > Dockerfile
 
 ##
 
-#####Ajouter les commandes au fichier Docker-Compose
+##### Ajouter les commandes au fichier Docker-Compose
 
-####echo "👇👇👇" > docker-compose.yml
+#### echo "👇👇👇" > docker-compose.yml
 > [!CAUTION]
 > Port :8010,9906,8088
 > Verifier que les port son disponible!
@@ -83,9 +82,9 @@ services:
           - db
 ```
 #
-####Ajouter les commandes au fichier index.php
+#### Ajouter les commandes au fichier index.php
 
-####echo "👇👇👇" > index.php
+#### echo "👇👇👇" > index.php
 
 ```
 <?php
