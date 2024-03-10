@@ -12,7 +12,7 @@
 
 ## Étape 1 - Création des fichiers
 
-```
+```bash
 mkdir [Nouveau dossier]
 ```
 ```
