@@ -83,7 +83,7 @@ services:
           - db
 
 " > docker-compose.yml
-
+```
 > [!CAUTION]
 > Port :8010,9906,8088
 > Verifier que les port son disponible!
@@ -95,6 +95,7 @@ services:
 ### echo "👇👇👇" > index.php
 #
 ```
+echo "
 <?php
 $msg="";
     if(isset($_GET['reg']))
@@ -233,7 +234,7 @@ $msg="";
             </form></div>
     </body>
 </html>
-
+" > index.php
 ```
 
 ### Verifier si le toute est bien dans les fichier :
