@@ -95,6 +95,7 @@ services:
 ### echo "👇👇👇" > index.php
 #
 ```
+```
 echo "
 <?php
 $msg="";
@@ -235,6 +236,7 @@ $msg="";
     </body>
 </html>
 " > index.php
+
 ```
 
 ### Verifier si le toute est bien dans les fichier :
