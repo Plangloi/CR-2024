@@ -239,7 +239,16 @@ cat docker-compose.yml
 ```
 cat index.php
 ```
+```
+### sudo docker-compose uo -d
+```
+```
+sudo docker-compose down
 
+ou
+
+sudo docker-compose stop
+```
 
 
 
