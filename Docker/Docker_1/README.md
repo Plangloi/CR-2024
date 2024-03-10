@@ -1,4 +1,4 @@
-#1-Site web PHP avec Docker-Compose
+# 1-Site web PHP avec Docker-Compose
 
 
 ### Prérequis:
@@ -9,7 +9,7 @@
    
  
 
-### Étape 1 - Création des fichiers
+## Étape 1 - Création des fichiers
 
 ```
 mkdir [Nouveau dossier]
@@ -36,7 +36,7 @@ RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli" > Dockerfile
 
 #
 
-##### Ajouter les commandes au fichier Docker-Compose
+### Ajouter les commandes au fichier Docker-Compose
 
 #### echo "👇👇👇" > docker-compose.yml
 > [!CAUTION]
