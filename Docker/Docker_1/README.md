@@ -5,7 +5,7 @@
 ## Installation de :
 - [ ] [Docker](https://docs.docker.com/engine/install/ubuntu/)
 - [ ] [Docker-Compose](https://docs.docker.com/compose/install/)
-- [ ] Connection a Internet
+- [ ] Connections a Internet
 
    
  
@@ -27,19 +27,19 @@ chmod 777 docker-compose.yaml index.php Dockerfile
 ```
 ### Ajouter les commandes au fichier Docker
 
-#### echo "👇👇👇" > Docker
+### echo "👇👇👇" > Docker
 #
 ```
+echo "
 FROM php:8.0-apache 
 RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli" > Dockerfile
 ```
-
 
 #
 
 ### Ajouter les commandes au fichier Docker-Compose
 
-#### echo "👇👇👇" > docker-compose.yml
+### echo "👇👇👇" > docker-compose.yml
 
 ```
 echo "
@@ -94,7 +94,6 @@ services:
 
 ### echo "👇👇👇" > index.php
 #
-```
 ```
 echo "
 <?php
@@ -242,19 +241,24 @@ $msg="";
 ### Verifier si le toute est bien dans les fichier :
 ```
 cat Docker
+
 ```
 ```
 cat docker-compose.yml
+
 ```
 ```
 cat index.php
+
 ```
 ```
 sudo docker-compose uo -d
+
 ```
 ## Stopper ou Detruire les Docker!
 ```
 sudo docker-compose stop
+
 ```
 
 
