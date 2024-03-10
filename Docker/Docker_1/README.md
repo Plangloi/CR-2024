@@ -240,8 +240,9 @@ cat docker-compose.yml
 cat index.php
 ```
 ```
-### sudo docker-compose uo -d
+sudo docker-compose uo -d
 ```
+## Stoper ou Detruire les Docker!
 ```
 sudo docker-compose stop
 ```
