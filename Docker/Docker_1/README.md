@@ -249,8 +249,10 @@ cat docker-compose.yml
 cat index.php
 
 ```
+
+## Démarrage des Docker avec Docker-compose :
+
 ```
-## Starter les des avec Docker-compose :
 sudo docker-compose up -d
 
 ```
@@ -267,6 +269,7 @@ sudo docker-compose stop
 > Va detruire tout les Docker!!
 ```
 sudo docker-compose down
+
 ```
 
 
