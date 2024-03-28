@@ -1,7 +1,7 @@
 # Bash cheatsheet
 
 keywords:
-
+[variables](#variables)
   - Variables
   - Functions
   - Interpolation
