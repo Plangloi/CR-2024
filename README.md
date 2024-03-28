@@ -1,14 +1,16 @@
 # Bash cheatsheet
 
 keywords:
-[variables](#variables)
-  - Variables
-  - Functions
-  - Interpolation
-  - Brace expansions
-  - Loops
-  - Conditional execution
-  - Command substitution
+
+  - [Variables](#ariables)
+  - [Functions](#Functions)
+  - [Interpolation](#Interpolation)
+  - [Brace expansions](#Brace_expansions)
+  - [Loops](#Loops)
+  - [Conditional execution](#Conditional_execution)
+  - [Command substitution](#Command_substitution)
+
+
 ---
 
 ## Getting started
