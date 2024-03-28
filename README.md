@@ -2,12 +2,13 @@
 
 keywords:
 
-  - [Variables](#variables)
+  - [Shell execution](#Shell-execution)
+  - [Brace expansion](#Brace-expansion)
   - [Functions](#functions)
-  - [Interpolation](#Interpolation)
-  - [Brace expansions](#Brace)
+  - [Parameter expansions](Parameter-expansions)
+  - [Basic for loop](#Basic-for-loop)
   - [Loops](#Loops)
-  - [Conditional execution](#Conditional)
+  - [Defining functions](#Defining-functions)
   - [Substitution](#substitution)
 
 
