@@ -1,7 +1,7 @@
- Exercice 2
- Patrice Langlois
+ ## Exercice 2
+ 
 
- Écrire un algorithme permettant de saisir le poids (en kg) et la taille (en m) d’une personne et d’afficher un message
+  Écrire un algorithme permettant de saisir le poids (en kg) et la taille (en m) d’une personne et d’afficher un message
  selon son Indice de Masse Corporelle (IMC).
 
 
@@ -9,7 +9,8 @@
   • "Corpulence Anormale Basse : Prenez des forces" : IMC est au plus 17.39
   • "Corpulence Normale : Bonne habitude alimentaire" : IMC se trouve dans l’intervalle ]17.39 ; 25.98[
   • "Corpulence Anormale Élevée : Surveiller votre alimentation" : IMC est au moins 25.98
-  Travail à Faire (TAF) :
+  
+  ### Travail à Faire :
   1. Analyse du problème (5 points (10% de 100%))
   2. Écrire l’algorithme permettant de résoudre ce problème (20 points (40% de 100%))
   3. Traduire l’algorithme en script PowerShell (20 points (40% de 100%))
@@ -36,7 +37,7 @@ Sortie :
 
 
 
-Traitement
+### Traitement :
 ```
 Début
     // Saisie du poids et de la taille
@@ -59,4 +60,3 @@ Début
         Afficher("Corpulence Anormale Élevée : Surveiller votre alimentation")
     FinSi
 ```
-Fin
