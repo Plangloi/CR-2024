@@ -2,13 +2,13 @@
 
 keywords:
 
-  - [Variables](#ariables)
-  - [Functions](#Functions)
+  - [Variables](#variables)
+  - [Functions](#functions)
   - [Interpolation](#Interpolation)
-  - [Brace expansions](#Brace_expansions)
+  - [Brace expansions](#Brace expansions)
   - [Loops](#Loops)
-  - [Conditional execution](#Conditional_execution)
-  - [Command substitution](#Command_substitution)
+  - [Conditional execution](#Conditional execution)
+  - [Command substitution](#Command substitution)
 
 
 ---
