@@ -5,10 +5,10 @@ keywords:
   - [Variables](#variables)
   - [Functions](#functions)
   - [Interpolation](#Interpolation)
-  - [Brace expansions](#Brace expansions)
+  - [Brace expansions](#Brace)
   - [Loops](#Loops)
-  - [Conditional execution](#Conditional execution)
-  - [Command substitution](#Command substitution)
+  - [Conditional execution](#Conditional)
+  - [Command substitution](#Command)
 
 
 ---
