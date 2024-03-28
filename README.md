@@ -8,7 +8,7 @@ keywords:
   - [Brace expansions](#Brace)
   - [Loops](#Loops)
   - [Conditional execution](#Conditional)
-  - [Command substitution](#Command-substitution)
+  - [Substitution](#substitution)
 
 
 ---
